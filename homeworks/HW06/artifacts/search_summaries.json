@@ -1,0 +1,17 @@
+[
+    {
+        "model": "LogisticRegression",
+        "best_C": 100.0,
+        "best_cv_score": 0.8041495300132466
+    },
+    {
+        "model": "DecisionTreeClassifier",
+        "best_ccp_alpha": 0.0004044942354615412,
+        "best_cv_score": 0.8297706149251047
+    },
+    {
+        "model": "RandomForestClassifier",
+        "best_max_features": "sqrt",
+        "best_cv_score": 0.9264779163752873
+    }
+]

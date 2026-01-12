@@ -1,0 +1,38 @@
+[
+    {
+        "model": "DummyClassifier",
+        "accuracy_score": 0.7375,
+        "roc_auc_score": 0.5,
+        "f1_score": 0.0,
+        "confusion_matrix": "[[2655    0]\n [ 945    0]]"
+    },
+    {
+        "model": "LogisticRegression",
+        "accuracy_score": 0.8119444444444445,
+        "roc_auc_score": 0.7976938789744817,
+        "f1_score": 0.5606748864373783,
+        "confusion_matrix": "[[2491  164]\n [ 513  432]]"
+    },
+    {
+        "model": "DecisionTreeClassifier",
+        "accuracy_score": 0.8405555555555555,
+        "roc_auc_score": 0.8399553602566784,
+        "f1_score": 0.6631455399061033,
+        "confusion_matrix": "[[2461  194]\n [ 380  565]]",
+        "node_count": 279
+    },
+    {
+        "model": "RandomForestClassifier",
+        "accuracy_score": 0.8905555555555555,
+        "roc_auc_score": 0.9261519146264909,
+        "f1_score": 0.7555831265508685,
+        "confusion_matrix": "[[2597   58]\n [ 336  609]]"
+    },
+    {
+        "model": "AdaBoostClassifier",
+        "accuracy_score": 0.8108333333333333,
+        "roc_auc_score": 0.8208549307984336,
+        "f1_score": 0.5260960334029228,
+        "confusion_matrix": "[[2541  114]\n [ 567  378]]"
+    }
+]
