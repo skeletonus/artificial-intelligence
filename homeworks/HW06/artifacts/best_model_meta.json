@@ -1,12 +1,10 @@
-[
-    {
-        "model": "RandomForestClassifier",
-        "metrics": {
-            "accuracy_score": 0.8905555555555555,
-            "roc_auc_score": 0.9261519146264909,
-            "f1_score": 0.7555831265508685,
-            "oob_score": 0.8901388888888889
-        },
-        "confusion_matrix": "[[2597   58]\n [ 336  609]]"
-    }
-]
+{
+    "model": "RandomForestClassifier",
+    "metrics": {
+        "accuracy_score": 0.8905555555555555,
+        "roc_auc_score": 0.9261519146264909,
+        "f1_score": 0.7555831265508685,
+        "oob_score": 0.8901388888888889
+    },
+    "confusion_matrix": "[[2597   58]\n [ 336  609]]"
+}
