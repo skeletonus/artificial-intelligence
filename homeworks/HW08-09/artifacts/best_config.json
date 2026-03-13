@@ -1,0 +1,17 @@
+{
+    "seed": 42,
+    "dataset": "EMNIST",
+    "mode_summary": "batchnorm + earlystopping",
+    "hidden_dims": [
+        256,
+        128
+    ],
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "dropout_p": 0.0,
+    "batchnorm": true,
+    "momentum": 0,
+    "weight_decay": 0,
+    "patience": 4,
+    "epochs_trained": 8
+}
