@@ -1,4 +1,4 @@
-experiment_id,dataset,seed,mode_summary,optimizer,lr,momentum,weight_decay,epochs_trained,best_val_accuracy,best_val_loss
+experiment_id,dataset,seed,model_summary,optimizer,lr,momentum,weight_decay,epochs_trained,best_val_accuracy,best_val_loss
 E1,EMNIST,42,baseline,Adam,0.001,0,0,20,0.8463652482269504,0.49104034456800905
 E2,EMNIST,42,dropout,Adam,0.001,0,0,20,0.8418439716312057,0.49178862677398305
 E3,EMNIST,42,batchnorm,Adam,0.001,0,0,20,0.8515957446808511,0.4554618512485044
