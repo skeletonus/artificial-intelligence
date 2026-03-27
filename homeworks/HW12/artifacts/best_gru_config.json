@@ -1,0 +1,11 @@
+{
+    "architecture": "GRU",
+    "window_size": 168,
+    "hidden_size": 64,
+    "batch_size": 64,
+    "learning_rate": 0.0005,
+    "seed": 42,
+    "scaler": "StandartScaler",
+    "optimizer": "Adam",
+    "epochs_trained": 30
+}

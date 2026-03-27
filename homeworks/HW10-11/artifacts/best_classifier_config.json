@@ -1,0 +1,24 @@
+{
+    "seed": 42,
+    "dataset": "STL10",
+    "architecture": "ResNet18",
+    "transforms": {
+        "Resize": 256,
+        "CenterCrop": 224,
+        "Normalize": [
+            [
+                0.485,
+                0.456,
+                0.406
+            ],
+            [
+                0.229,
+                0.224,
+                0.225
+            ]
+        ]
+    },
+    "optimizer": "Adam",
+    "weight_decay": 0.0001,
+    "epochs_trained": 6
+}

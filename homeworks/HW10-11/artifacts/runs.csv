@@ -1,0 +1,7 @@
+experiment_id,task,dataset,seed,model_summary,optimizer,lr,epochs_trained,best_val_accuracy,test_accuracy,precision,recall,mean_iou,notes
+C1,classification,STL10,42,"3 conv blocks, 2 classification layers",Adam,0.001,12,0.548,,,,,Simple CNN
+C2,classification,STL10,42,"3 conv blocks, 2 classification layers",Adam,0.001,12,0.6,,,,,Simple CNN + augmentation
+C3,classification,STL10,42,ResNet18,Adam,0.001,6,0.943,,,,,ResNet head only
+C4,classification,STL10,42,ResNet18 + fine-tune layer4+fc,Adam,,6,0.964,0.949,,,,ResNet18 | fine-tune layer4+fc
+V1,detection,Pascal VOC,42,FasterRCNN_ResNet50_FPN_V2 inference,,,,,,0.442,0.927,0.862,"threshold = 0.3, inference"
+V2,detection,Pascal VOC,42,FasterRCNN_ResNet50_FPN_V2 inference,,,,,,0.675,0.861,0.865,"threshold = 0.7, inference"
