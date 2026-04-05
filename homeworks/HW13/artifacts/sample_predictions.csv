@@ -1,0 +1,6 @@
+,text,true_label,pred_label,confidence
+0,i feel like i m losing control over everything and it scares me to death,fear,sadness,0.985302209854126
+1,i feel so grateful for my friends who have stuck by me through the hardest times,love,joy,0.5692824721336365
+2,i feel like nothing i do matters anymore and i m just going through the motions,sadness,joy,0.9919624924659729
+3,i feel like screaming at everyone who keeps telling me to just get over it,anger,anger,0.9923543930053711
+4,i feel so happy and light today like a weight has been lifted off my shoulders,joy,joy,0.9995964169502258
