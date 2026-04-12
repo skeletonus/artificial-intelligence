@@ -1,0 +1,4 @@
+,query,before_retrieved_sources,after_retrieved_sources,changed
+0,Генеративный искусственный интеллект и его возможности,"doc_1, doc_5","doc_1, doc_5",nothing
+1,Когда была выпущена первая модель GPT,"doc_2, doc_5, doc_6","doc_11, doc_12",new_docs_referenced
+2,Из чего состоит трансформер?,"doc_9, doc_1","doc_12, doc_11",new_docs_referenced
