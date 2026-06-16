@@ -1,0 +1,5 @@
+name,train_rmse,train_mae,test_rmse,test_mae,random_state,max_depth,min_samples_split,min_samples_leaf,max_features,ccp_alpha,n_estimators,learning_rate,subsample,validation_fraction,n_iter_no_change,tol,iterations,depth,l2_leaf_reg,bagging_temperature
+DecisionTreeRegressor,0.8941236322054154,0.694866243462764,1.0214342382511894,0.8120875069235153,42,[7],[20],[50],[None],[0.0],,,,,,,,,,
+RandomForestRegressor,0.8833529696148522,0.6859961711487137,1.0131383524752826,0.7998407188522078,42,[7],[20],[50],[None],[0.0],[50],,,,,,,,,
+GradientBoostingRegressor,0.895270254509893,0.6976085309054688,1.0128683748736602,0.8026692182410126,42,[10],[50],[20],['sqrt'],[0.001],[500],[0.1],[0.8],[0.1],[10],[0.0001],,,,
+CatBoostRegressor,0.8388843239784762,0.6507175339013277,1.0103843848984475,0.7939329261809729,42,,,,,,,[0.03],,,,,[500],[8],[5],[0.5]

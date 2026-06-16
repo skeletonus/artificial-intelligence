@@ -1,0 +1,6 @@
+{
+    "name": "NeuralCF",
+    "test_rmse": 1.010898791368115,
+    "test_mae": 0.7995345566964064,
+    "random_state": 42
+}

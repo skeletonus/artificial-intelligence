@@ -1,0 +1,23 @@
+{
+    "name": "CatBoostRegressor",
+    "train_rmse": 0.8388843239784762,
+    "train_mae": 0.6507175339013277,
+    "test_rmse": 1.0103843848984475,
+    "test_mae": 0.7939329261809729,
+    "random_state": 42,
+    "max_depth": NaN,
+    "min_samples_split": NaN,
+    "min_samples_leaf": NaN,
+    "max_features": NaN,
+    "ccp_alpha": NaN,
+    "n_estimators": NaN,
+    "learning_rate": 0.03,
+    "subsample": NaN,
+    "validation_fraction": NaN,
+    "n_iter_no_change": NaN,
+    "tol": NaN,
+    "iterations": 500,
+    "depth": 8,
+    "l2_leaf_reg": 5,
+    "bagging_temperature": 0.5
+}
