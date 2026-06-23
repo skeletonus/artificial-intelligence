@@ -1,0 +1,65 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Test and coverage reports
+.coverage
+.coverage.*
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+catboost_info/
+
+# Local environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Downloaded, intermediate datasets and generated production catalog
+data/*
+!data/README.md
+
+# Generated models and metadata
+artifacts/models/*
+!artifacts/models/README.md
+
+artifacts/metadata/*
+!artifacts/metadata/README.md
+
+# User runtime data
+user_data/*
+!user_data/README.md
+
+# Local archives
+*.zip
+*.rar
+*.7z

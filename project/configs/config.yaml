@@ -1,0 +1,81 @@
+project:
+  random_state: 42
+
+data:
+  datasets:
+
+    small:
+      name: "ml-latest-small"
+      url: "https://files.grouplens.org/datasets/movielens/ml-latest-small.zip"
+      path: "data/ml-latest-small"
+      raw_dir: "data/ml-latest-small/raw"
+      raw_version_dir: "data/ml-latest-small/raw_version"
+      enriched_version_dir: "data/ml-latest-small/enriched_version"
+
+    full:
+      name: "ml-32m"
+      url: "https://files.grouplens.org/datasets/movielens/ml-32m.zip"
+      path: "data/ml-32m"
+      raw_dir: "data/ml-32m/raw"
+      raw_version_dir: "data/ml-32m/raw_version"
+
+  movielens_files:
+    - "movies.csv"
+    - "ratings.csv"
+    - "links.csv"
+    - "tags.csv"
+
+paths:
+  data_dir: "data"
+  artifacts_dir: "artifacts"
+  user_data_dir: "user_data"
+
+  models_dir: "artifacts/models"
+  metadata_dir: "artifacts/metadata"
+  experiments_dir: "artifacts/experiments"
+
+  production_dir: "data/production"
+  movies_catalog_path: "data/production/movies_catalog.csv"
+  genre_columns_path: "artifacts/metadata/genre_columns.json"
+
+split:
+  test_size: 0.2
+  val_size_from_train: 0.125
+
+movie_catalog:
+  regularization_lambda: 5.0
+
+enrichment:
+  min_ratings: 5
+  default_rating: 3.5
+
+model:
+  catboost_model_path: "artifacts/models/catboost_model.cbm"
+  catboost_metadata_path: "artifacts/metadata/catboost_metadata.json"
+  svd_global_model_path: "artifacts/models/svd_global_model.joblib"
+
+catboost:
+  iterations: 500
+  learning_rate: 0.03
+  depth: 8
+  loss_function: "RMSE"
+  eval_metric: "RMSE"
+  random_seed: 42
+  verbose: 100
+
+svd:
+  n_factors: 50
+  n_epochs: 20
+  lr_all: 0.005
+  reg_all: 0.1
+  random_state: 42
+  max_train_ratings: 5000000
+  
+cold_start:
+  default_min_genre_rating: 2.5
+
+warm_start:
+  threshold: 10
+rating:
+  min_rating: 0.5
+  max_rating: 5.0

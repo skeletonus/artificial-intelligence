@@ -1,0 +1,30 @@
+services:
+  setup:
+    build: .
+    image: movie-recommender:latest
+    command: python -m src.setup_project --cleanup-data
+    volumes:
+      - ./data:/app/data
+      - ./artifacts:/app/artifacts
+      - ./user_data:/app/user_data
+
+  test:
+    build: .
+    image: movie-recommender:latest
+    command: python -m pytest -q
+    volumes:
+      - ./data:/app/data
+      - ./artifacts:/app/artifacts
+      - ./user_data:/app/user_data
+
+  api:
+    build: .
+    image: movie-recommender:latest
+    command: python -m uvicorn src.api.app:app --host 0.0.0.0 --port 8000
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+      - ./artifacts:/app/artifacts
+      - ./user_data:/app/user_data
+    restart: unless-stopped

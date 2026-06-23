@@ -1,0 +1,20 @@
+{
+    "name": "BiasBaseline",
+    "train_rmse": 0.8244662286448134,
+    "train_mae": 0.637939019627765,
+    "test_rmse": 1.0253377698839907,
+    "test_mae": 0.7984559176895126,
+    "reg": 5.0,
+    "k": NaN,
+    "min_k": NaN,
+    "sim_options": NaN,
+    "n_factors": NaN,
+    "n_epochs": NaN,
+    "lr_all": NaN,
+    "reg_all": NaN,
+    "random_state": NaN,
+    "cache_ratings": NaN,
+    "reg_pu": NaN,
+    "reg_qi": NaN,
+    "biased": NaN
+}
